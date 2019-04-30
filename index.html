@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Bootstrap Example</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lobipanel/1.0.3/css/lobipanel.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link type="text/css" rel="stylesheet" href="https://unpkg.com/jasmine-core@latest/lib/jasmine-core/jasmine.css">
+   </head>
+   <body>
+      <div class="container">
+         <div class='row'>
+            <div class="col-md-5">
+               <div class="panel panel-default">
+                  <div class="panel-heading">
+                     <h2>Javascript Exercise</h2>
+                  </div>
+                  <div class="panel-body">
+
+                    
+                     <!-- Accordion item 1 -->
+                     <div id="accordion" class="accordion" style="padding-top:10px;">
+                        <div class="card mb-0">
+                           <div class="accordionInner">
+                              <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne">
+                                 <a class="card-title">
+                                 Exercise details
+                                 </a>
+                              </div>
+                              <div id="collapseOne" class="card-body collapse" data-parent="#accordion">
+<h1>A function can return a function.</h1>
+<p>
+
+Do you know closure, partial application and currying in JavaScript?
+</p>
+<p>
+An example of a real "partial application concept" is the JavaScript Bind() function
+</p>
+<p>
+Function.prototype.bind()
+</p>
+
+<p>
+Write a function called <strong>quadrupleWithBind()</strong> to quadruple a number
+</p>
+<p><strong>For example:</strong> The quadruple of 3 is 12</p>
+<p>
+3 + 3 + 3 + 3 = 12 &nbsp;&nbsp;&nbsp;OR&nbsp;&nbsp;&nbsp;3 * 4 = 12
+</p>
+<p>
+<strong>REQUIRED:</strong> Make sure to use the JavaScript bind() method
+</p>
+
+
+
+
+ <div class="resp-container">
+<iframe class="resp-iframe" 
+  src="https://carbon.now.sh/embed/?bg=rgba(239%2C201%2C252%2C1)&t=night-owl&wt=none&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fm=Hack&fs=18px&lh=133%25&si=true&es=2x&wm=false&code=%252F**%250A*%2520moyarich%2520(moyarich.com%2520%257C%2520codingstorytime.com)%250A*%2520%250A*%2520Coding%2520Story%2520Time%25E2%2580%258A-%25E2%2580%258AA%2520JavaScript%2520function%2520can%2520return%2520a%25C2%25A0function%250A*%2520%250A*%2520My%2520dog%2520ate%2520half%2520of%2520my%2520sandwiches%250A*%252F%250A%250Afunction%2520house(sandwiches)%257B%250A%2520%2520%2520function%2520dogHouse()%257B%250A%2520%2520%2520%2520%2520let%2520dogEat%2520%253D%2520sandwiches%2520%252F%25202%253B%250A%2520%2520%2520%2520%2520return%2520dogEat%253B%250A%2520%2520%2520%257D%250A%2520%2520%2520return%2520dogHouse%253B%250A%257D%250A%250A%252F*%250ASo%2520today%252C%2520I%2520had%2520plans%2520to%2520spend%2520the%2520rest%2520of%2520the%2520day%2520being%2520lazy.%2520My%2520friend%2520John%2520is%2520going%2520to%2520clean%2520my%2520dog's%2520house%2520for%2520me%252C%2520so%2520I%2520am%2520super%2520happy.%250AMy%2520dog%2520is%2520super%2520spoiled.%2520She%2520has%2520her%2520own%2520house%2520in%2520my%2520basement.%250A%250A%250AWell%252C%2520right%2520before%2520I%2520gave%2520John%2520the%2520dog%2520house%252C%2520I%2520made%2520myself%25204%2520sandwiches.%2520Two%2520for%2520lunch%2520and%2520two%2520for%2520dinner%252C%2520after%2520that%2520I%2520went%2520to%2520sleep.%250A*%252F%250A%250Avar%2520dogHouse%2520%253D%2520house(4)%253B%250A%250A%252F*%250AI%2520woke%2520up%2520two%2520hours%2520later%2520to%2520check%2520on%2520my%2520dog's%2520house%2520because%2520I%2520wanted%2520to%2520see%2520how%2520clean%2520it%2520was%252C%2520and%2520you%2520won't%2520believe%2520what%2520I%2520saw!%250A*%252F%250A%250Avar%2520checkDogHouse%2520%253D%2520dogHouse()%253B%250A%250A%252F*%250AI%2520saw%2520my%2520dog%252C%2520in%2520her%2520house%252C%2520eating%2520half%2520the%2520sandwiches%2520I%2520had%2520sitting%2520on%2520my%2520kitchen%2520table.%250A*%252F%250A%250Aconsole.log(checkDogHouse)%253B%2520%252F%252Fexpected%2520output%25202%250A%250A%252F*%250AI%2520completely%2520forgot%2520that%2520since%2520the%2520dog's%2520house%2520was%2520inside%2520of%2520my%2520house%252C%2520the%2520dog%2520can%2520do%2520whatever%2520she%2520wants%2520with%2520my%2520things.%250A%250AThis%2520time%2520she%2520decided%2520to%2520eat%2520half%2520of%2520my%2520sandwiches%252C%2520I%2520can't%2520even%2520imagine%2520what%2520she%2520would%2520do%2520next.%25C2%25A0%250A%250ARight%2520now%252C%2520I%2520am%2520hungry%2520and%2520a%2520little%2520mad%2520at%2520myself.%2520So%252C%2520my%2520decision%2520is%2520final%252C%2520I%2520have%2520made%2520up%2520my%2520mind.%25C2%25A0%250AI%2520have%2520plans%2520to%2520move%2520the%2520dog's%2520house%2520to%2520the%2520backyard%2520this%2520summer.%250A*%252F%250A%250A%250A---------Recap%2520--------%250AdogHouse%2520is%2520a%2520child%2520of%2520the%2520house%2520function%2520so%2520it%2520will%2520have%2520access%2520to%2520the%2520sandwich.%250A%250A%250AJavaScript%2520allows%2520functions%2520to%2520return%2520functions%252C%2520a%2520very%2520powerful%2520technique"
+  style="transform:scale(0.7); height:1300px; border:0; overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+</div>
+
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/lobipanel/1.0.3/js/lobipanel.min.js"></script>
+      <script>
+         $(function () {
+             $('.panel').lobiPanel({
+                   reload: false,
+                   editTitle:false,
+                   minimize: false,
+                   unpin:false,
+                   sortable: true,
+                   resizable: true,
+                   resize: 'both',
+                   width: 900;
+                   minHeight: 400,
+                   maxHeight: 900,
+                   close:false,
+                   expand: {
+                       icon: 'fa fa-expand colorwhite',
+                       icon2: 'fa fa-compress colorwhite'
+                   },
+               });
+             });
+      </script>
+   </body>
+</html>
